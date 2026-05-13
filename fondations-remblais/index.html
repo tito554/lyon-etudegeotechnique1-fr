@@ -123,6 +123,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#0A2540) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 <header class="header">
 <div class="header-top">
@@ -144,7 +180,7 @@ header.hero, .hero { position: relative !important; }
 <p>Entre le quartier de la Part-Dieu, bâti sur d'anciens marais asséchés et des remblais hétérogènes, et les pentes de la Croix-Rousse, où le socle rocheux affleure, les contrastes de sol à Lyon imposent une approche rigoureuse pour toute fondation sur remblais. Un remblai mal caractérisé peut générer des tassements imprévisibles ou des ruptures de portance. Avant d'engager des travaux, une reconnaissance par <a data-interlink="1" href="../tomographie-sismique/">tomographie sismique</a> affine la compréhension des contrastes de densité, tandis qu'un <a data-interlink="1" href="../compression-simple/">essai de compression simple</a> sur des échantillons prélevés valide la résistance mécanique. L'analyse des fondations sur remblais à Lyon nécessite donc une expertise locale et des méthodes adaptées à cette géologie contrastée.</p><figure style="margin:1.5rem auto;max-width:720px;text-align:center"><img src="/img/cimentaciones-rellenos-2.webp" loading="lazy" decoding="async" width="800" height="600" alt="Illustrative image of Fondations sur remblais (analyse) in " style="width:100%;height:auto;display:block;border-radius:8px;border:1px solid #E5E7EB"></figure>
 <blockquote style="border-left:4px solid #EAB308;background:rgba(0,0,0,.03);padding:1rem 1.25rem;margin:1.5rem 0 1.5rem 1rem;font-style:italic;color:#333;font-size:1.05rem;line-height:1.55;border-radius:0 6px 6px 0">Un remblai mal caractérisé à Lyon peut entraîner des tassements différentiels de plusieurs centimètres, compromettant la stabilité des structures.</blockquote>
 <figure style="margin:1.5rem auto;max-width:60%;border-radius:6px;overflow:hidden;border:1px solid #E5E5E5"></figure>
-<h2>Considérations locales</h2><p>Selon la norme NF P 94-261 (Eurocode 7 appliqué aux fondations superficielles), les remblais non contrôlés sont classés comme sols compressibles. À Lyon, les zones de remblais anciens — comme ceux du quartier Confluence — présentent un risque majeur de tassement différentiel sous charge, aggravé par la présence de nappes phréatiques superficielles. Une analyse insuffisante des fondations sur remblais peut entraîner des désordres structurels coûteux. L'application stricte des règles de l'art et une reconnaissance poussée sont les seuls remparts contre ces aléas.</p>
+<h2>Considérations locales</h2><p>Selon la norme NF P 94-261 (Eurocode 7 appliqué aux <a href="/fondations/">fondations</a> superficielles), les remblais non contrôlés sont classés comme sols compressibles. À Lyon, les zones de remblais anciens — comme ceux du quartier Confluence — présentent un risque majeur de tassement différentiel sous charge, aggravé par la présence de nappes phréatiques superficielles. Une analyse insuffisante des fondations sur remblais peut entraîner des désordres structurels coûteux. L'application stricte des règles de l'art et une reconnaissance poussée sont les seuls remparts contre ces aléas.</p>
 <h2>Normes applicables</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
 <p>NF P 94-261 (Eurocode 7 – fondations superficielles), NF P 94-110 (essai pressionnétrique Ménard), NF P 94-093 (essai Proctor Normal / Modifié)</p>
